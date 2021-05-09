@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}   
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#c5efff, #7fdbff);
+    background-attachment: fixed;
+    /* background-color: #93e0ff; */
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2.85vw;
+}
+
+#title {
+    font-family: 'Carter One', cursive;
+    font-size: 2vw;
+    color: rgb(64, 59, 143);
+    margin-bottom: 1vw;
+}
+
+#deck {
+    width: 69vw;
+    height: 32vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1vw;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.35vw;
+    cursor: pointer;
+    pointer-events: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.image {
+    width: 86%;
+    height: 91%;
+    border: 1px solid gray;
+    pointer-events: all;
+}
+
+.selected-card {
+    pointer-events: none;
+}
+
+#aqua {
+    background: url('../img/aqua.png') no-repeat center / cover;
+}
+
+#kazuma {
+    background: url('../img/kazuma.png') no-repeat center / cover;
+}
+
+#megumin {
+    background: url('../img/megumin.png') no-repeat center / cover;
+}
+
+#darkness {
+    background: url('../img/darkness.png') no-repeat center / cover;
+}
+
+#yunyun {
+    background: url('../img/yunyun.png') no-repeat center / cover;
+}
+
+#wiz {
+    background: url('../img/wiz.png') no-repeat center / cover;
+}
+
+#footer-text {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Patua One', cursive;
+    font-size: 1.15vw;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.25vw;
+}
+
+#footer-text a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+#footer-text a:hover {
+    color: black;
+    text-decoration-color: #cf2c4c;
+}
+
+.win-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Carter One', cursive;
+    color: white;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.show-modal {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#you-win {
+    font-size: 8vw;
+}
+
+#play-again {
+    width: 10.5vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    background-color: #cf2c4c;
+    border-radius: 0.35vw;
+    cursor: pointer;
+    outline: none;
+}
+
+#play-again:hover {
+    color: #cf2c4c;
+    background-color: white;
+    border: 0.25vw solid #cf2c4c;
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+    #container {
+        margin-bottom: 8vw;
+    }
+
+    #deck {
+        width: 64vw;
+        height: 115vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 2vw;
+    }
+
+    .card {
+        border-radius: 1vw;
+    }
+
+    #title {
+        font-size: 4.25vw;
+        margin-bottom: 0.75vw;
+    }
+
+    #footer-text {
+        font-size: 2.75vw;
+        margin-bottom: 3vw;
+    }
+
+    #you-win {
+        font-size: 14.5vw;
+    }
+
+    #play-again {
+        width: 29vw;
+        height: 8vw;
+        font-size: 4vw;
+        border-radius: 0.75vw;
+    }
+
+    #play-again:hover {
+        border: 0.5vw solid #cf2c4c;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #deck {
+        width: 85vw;
+        height: 155vw;
+        gap: 2.5vw;
+    }
+
+    .card {
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    #title {
+        font-size: 5.75vw;
+        margin-bottom: 1.5vw;
+    }
+
+    #footer-text {
+        font-size: 3.25vw;
+        margin-bottom: 3vw;
+    }
+
+    #you-win {
+        font-size: 18vw;
+    }
+
+    #play-again {
+        width: 39vw;
+        height: 11vw;
+        font-size: 5vw;
+        border-radius: 1vw;
+    }
+
+    #play-again:hover {
+        border: 0.8vw solid #cf2c4c;
+    }
+}
