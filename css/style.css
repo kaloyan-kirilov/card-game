@@ -4,20 +4,14 @@
     box-sizing: border-box;
 }
 
-html, body {
+body {
     width: 100vw;
     height: 100vh;
-}
-
-body {
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(#c5efff, #7fdbff);
-    /* background-position: center;
-    background-repeat: no-repeat; */
     background-size: cover;
-    /* background-attachment: fixed; */
     /* background-color: #93e0ff; */
 }
 
@@ -193,7 +187,7 @@ body {
     }
 
     #you-win {
-        font-size: 12vw;
+        font-size: 13vw;
     }
 
     #play-again {
@@ -204,13 +198,13 @@ body {
     }
 
     #play-again:hover {
-        border: 0.5vh solid #cf2c4c;
+        border: 0.45vh solid #cf2c4c;
     }
 }
 
 @media screen and (max-width: 500px) {
     #title {
-        height: 7vh;
+        height: 6.5vh;
     }    
 
     #deck {
@@ -223,9 +217,13 @@ body {
     }
 
     #footer-text {
-        height: 8vh;
+        height: 8.5vh;
         font-size: 3.85vw;
         flex-direction: column;
+    }
+
+    #art-theme {
+        padding-top: 3px;
     }
 
     #you-win {
