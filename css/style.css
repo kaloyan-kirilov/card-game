@@ -157,12 +157,12 @@ body {
 
 @media screen and (max-width: 1024px) and (orientation: portrait) {
     html, body {
-        width: 100vw;
-        height: 100vh;
-    }   
+        background-color: yellowgreen;
+    }
 
     body {
         align-items: unset;
+        background-image: unset;
     }
 
     #container {
