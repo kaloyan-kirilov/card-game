@@ -5,8 +5,8 @@
 }
 
 html, body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }   
 
 body {
@@ -156,15 +156,6 @@ body {
 }
 
 @media screen and (max-width: 1024px) and (orientation: portrait) {
-    html, body {
-        width: unset;
-        height: unset;
-    }
-
-    body {
-        align-items: unset;
-    }
-
     #container {
         margin-bottom: unset;
     }
