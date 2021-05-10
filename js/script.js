@@ -12,7 +12,7 @@ function resetComparison() {
 }
 
 function shuffleCards() {
-    cards.forEach( e => e.style.backgroundColor = '#984d2e' );
+    cards.forEach( e => e.style.background = 'linear-gradient(120deg, #b25b36, #984d2e)' );
     image.forEach( e => e.style.background = "url('img/card-back.png') no-repeat center / cover #E0A234" );
     image.forEach( e => e.style.border = '0' );
 
@@ -39,7 +39,7 @@ cards.forEach( e => e.addEventListener('click', e => {
     let charachterCard = e.target.id;
 
     e.target.classList.add('selected-card');
-    e.target.parentElement.style.backgroundColor = null;
+    e.target.parentElement.style.background = null;
     e.target.style.background = null;
     e.target.style.border = null;
 
@@ -116,7 +116,7 @@ function compareCards() {
         let noMatch = document.querySelectorAll('.no-match');
 
         function hideDelay() {
-            noMatch.forEach( e => e.parentElement.style.backgroundColor = '#984d2e' );
+            noMatch.forEach( e => e.parentElement.style.background = 'linear-gradient(120deg, #b25b36, #984d2e)' );
             noMatch.forEach( e => e.style.background = "url('img/card-back.png') no-repeat center / cover #E0A234" );
             noMatch.forEach( e => e.style.border = '0' );
             noMatch.forEach( e => e.classList.remove('no-match') );
