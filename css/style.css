@@ -14,7 +14,10 @@ body {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(#c5efff, #7fdbff);
-    background-attachment: fixed;
+    /* background-position: center;
+    background-repeat: no-repeat; */
+    background-size: cover;
+    /* background-attachment: fixed; */
     /* background-color: #93e0ff; */
 }
 
