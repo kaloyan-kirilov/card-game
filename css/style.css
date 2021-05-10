@@ -156,6 +156,11 @@ body {
 }
 
 @media screen and (max-width: 1024px) and (orientation: portrait) {
+    html, body {
+        width: unset;
+        height: unset;
+    }   
+
     body {
         align-items: unset;
     }
