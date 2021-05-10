@@ -93,6 +93,7 @@ body {
 #footer-text {
     position: absolute;
     bottom: 0;
+    display: flex;
     font-family: 'Patua One', cursive;
     font-size: 1.15vw;
     color: rgba(0, 0, 0, 0.5);
@@ -155,81 +156,87 @@ body {
 }
 
 @media screen and (max-width: 1024px) and (orientation: portrait) {
+    body {
+        align-items: unset;
+    }
+
     #container {
-        margin-bottom: 8vw;
-    }
-
-    #deck {
-        width: 64vw;
-        height: 115vw;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 2vw;
-    }
-
-    .card {
-        border-radius: 1vw;
+        margin-bottom: unset;
     }
 
     #title {
-        font-size: 4.25vw;
-        margin-bottom: 0.75vw;
+        height: 7.5vh;
+        font-size: 3.25vh;
+        margin-bottom: unset;
+        display: flex;
+        align-items: center;
+    }
+
+    #deck {
+        width: 45vh;
+        height: 85vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1.5vh;
+    }
+
+    .card {
+        border-radius: 0.75vh;
     }
 
     #footer-text {
+        height: 7.5vh;
         font-size: 2.75vw;
-        margin-bottom: 3vw;
+        margin-bottom: unset;
+        position: unset;
+        align-items: center;
+        justify-content: center;
     }
 
     #you-win {
-        font-size: 14.5vw;
+        font-size: 12vw;
     }
 
     #play-again {
-        width: 29vw;
-        height: 8vw;
-        font-size: 4vw;
-        border-radius: 0.75vw;
+        width: 20vh;
+        height: 6vh;
+        font-size: 3vh;
+        border-radius: 0.75vh;
     }
 
     #play-again:hover {
-        border: 0.5vw solid #cf2c4c;
+        border: 0.5vh solid #cf2c4c;
     }
 }
 
 @media screen and (max-width: 500px) {
+    #title {
+        height: 7vh;
+    }    
+
     #deck {
-        width: 85vw;
-        height: 155vw;
-        gap: 2.5vw;
+        max-width: 330px;
+        max-height: 625px;
     }
 
     .card {
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     }
 
-    #title {
-        font-size: 5.75vw;
-        margin-bottom: 1.5vw;
-    }
-
     #footer-text {
-        font-size: 3.25vw;
-        margin-bottom: 3vw;
+        height: 8vh;
+        font-size: 3.85vw;
+        flex-direction: column;
     }
 
     #you-win {
         font-size: 18vw;
     }
+}
 
-    #play-again {
-        width: 39vw;
-        height: 11vw;
-        font-size: 5vw;
-        border-radius: 1vw;
-    }
-
-    #play-again:hover {
-        border: 0.8vw solid #cf2c4c;
+@media screen and (max-width: 300px) {
+    #deck {
+        max-width: 250px;
+        max-height: 480px;
     }
 }
