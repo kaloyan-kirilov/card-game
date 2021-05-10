@@ -157,8 +157,8 @@ body {
 
 @media screen and (max-width: 1024px) and (orientation: portrait) {
     html, body {
-        width: unset;
-        height: unset;
+        width: 100vw;
+        height: 100vh;
     }   
 
     body {
