@@ -12,16 +12,16 @@ function resetComparison() {
 }
 
 function shuffleCards() {
+    cards.forEach( e => e.style.backgroundColor = '#984d2e' );
+    image.forEach( e => e.style.background = "url('img/card-back.png') no-repeat center / cover #E0A234" );
+    image.forEach( e => e.style.border = '0' );
+
     let deck = document.getElementById('deck');
     let allCards = deck.children.length;
 
     for (allCards; allCards >= 0; allCards--) {
         deck.appendChild(deck.children[Math.random() * allCards | 0]);
     }
-
-    cards.forEach( e => e.style.backgroundColor = '#984d2e' );
-    image.forEach( e => e.style.background = "url('img/card-back.png') no-repeat center / cover #E0A234" );
-    image.forEach( e => e.style.border = '0' );
 
     if (comparison.currentCard !== null) {
         resetComparison();

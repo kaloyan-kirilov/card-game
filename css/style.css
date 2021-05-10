@@ -222,10 +222,6 @@ body {
         flex-direction: column;
     }
 
-    #art-theme {
-        padding-top: 3px;
-    }
-
     #you-win {
         font-size: 18vw;
     }
