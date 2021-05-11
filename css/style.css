@@ -8,9 +8,9 @@
 }
 
 @font-face {
-    font-family: 'Patua One';
-    src: url('../fonts/PatuaOne-Regular.woff') format('woff'),
-        url('../fonts/PatuaOne-Regular.woff2') format('woff2');
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito-ExtraBold.woff') format('woff'),
+        url('../fonts/Nunito-ExtraBold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -43,7 +43,7 @@ body {
 #title {
     font-family: 'Carter One';
     font-size: 2vw;
-    color: rgb(79, 72, 177);
+    color: #4f48b1;
     margin-bottom: 1vw;
 }
 
@@ -108,9 +108,8 @@ body {
     position: absolute;
     bottom: 0;
     display: flex;
-    font-family: 'Patua One';
+    font-family: 'Nunito';
     font-size: 1.15vw;
-    letter-spacing: 0.25px;
     color: rgba(0, 0, 0, 0.45);
     margin-bottom: 1.25vw;
 }
@@ -205,18 +204,18 @@ body {
     }
 
     #you-win {
-        font-size: 13vw;
+        font-size: 13.5vw;
     }
 
     #play-again {
-        width: 20vh;
-        height: 6vh;
-        font-size: 3vh;
-        border-radius: 0.75vh;
+        width: 28vw;
+        height: 8vw;
+        font-size: 4vw;
+        border-radius: 1vw;
     }
 
     #play-again:hover {
-        border: 0.45vh solid #cf2c4c;
+        border: 0.65vw solid #cf2c4c;
     }
 }
 
@@ -242,6 +241,16 @@ body {
 
     #you-win {
         font-size: 18vw;
+    }
+
+    #play-again {
+        width: 39vw;
+        height: 11vw;
+        font-size: 5.5vw;
+    }
+
+    #play-again:hover {
+        border: 0.85vw solid #cf2c4c;
     }
 }
 
