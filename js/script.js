@@ -25,7 +25,6 @@ function shuffleCards() {
 
     if (comparison.currentCard !== null) {
         resetComparison();
-        console.log(comparison);
     }
 
     let match = document.querySelectorAll('.match');
@@ -48,7 +47,6 @@ cards.forEach( e => e.addEventListener('click', e => {
 
     if (comparison.currentCard === null && comparison.previousCard === null) {
         comparison.currentCard = charachterCard;
-        console.log(comparison);
         return;
     }
 
@@ -99,11 +97,8 @@ function compareCards() {
 
             playButton.addEventListener('click', playAgain);
 
-            console.log('Gratz, You win!');
             return;
         }
-
-        console.log(comparison, match.length);
 
         resetComparison();
         return;
@@ -125,7 +120,7 @@ function compareCards() {
         setTimeout(hideDelay, 500);
 
         resetComparison();
-        console.log(comparison);
+
         return;
     }
 }
