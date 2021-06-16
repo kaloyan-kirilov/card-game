@@ -5,42 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="preload" as="image" href="img/card-back.png">
-    <link rel="preload" as="image" href="img/aqua.png">
-    <link rel="preload" as="image" href="img/kazuma.png">
-    <link rel="preload" as="image" href="img/megumin.png">
-    <link rel="preload" as="image" href="img/darkness.png">
-    <link rel="preload" as="image" href="img/yunyun.png">
-    <link rel="preload" as="image" href="img/wiz.png">
+    <link rel="preload" as="image" href="img/deck/card-back.png">
+    <link rel="preload" as="image" href="img/deck/tiger-1.jpg">
+    <link rel="preload" as="image" href="img/deck/tiger-2.jpg">
+    <link rel="preload" as="image" href="img/deck/tiger-3.jpg">
+    <link rel="preload" as="image" href="img/deck/tiger-4.jpg">
+    <link rel="preload" as="image" href="img/deck/tiger-5.jpg">
+    <link rel="preload" as="image" href="img/deck/tiger-6.jpg">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
     <title>Card Game</title>
 </head>
 <body>
     <div id="container">
-    <div id="title">Matching Cards</div>
-    <div id="deck">
-        <div class="card"><div id="aqua" class="image"></div></div>
-        <div class="card"><div id="kazuma" class="image"></div></div>
-        <div class="card"><div id="megumin" class="image"></div></div>
-        <div class="card"><div id="darkness" class="image"></div></div>
-        <div class="card"><div id="yunyun" class="image"></div></div>
-        <div class="card"><div id="wiz" class="image"></div></div>
-        <div class="card"><div id="aqua" class="image"></div></div>
-        <div class="card"><div id="kazuma" class="image"></div></div>
-        <div class="card"><div id="megumin" class="image"></div></div>
-        <div class="card"><div id="darkness" class="image"></div></div>
-        <div class="card"><div id="yunyun" class="image"></div></div>
-        <div class="card"><div id="wiz" class="image"></div></div>
-        <audio id="flip-sound" src="sound/card-flip.mp3" preload="auto"></audio>
-        <audio id="match-sound" src="sound/card-match.mp3" preload="auto"></audio>
-        <audio id="win-sound" src="sound/deck-match.mp3" preload="auto"></audio>
-        <audio id="shuffle-sound" src="sound/shuffle-deck.mp3" preload="auto"></audio>
-    </div>
-    <div id="footer-text">
-        <div id="web-dev">Developed by <a href="https://kaloyan-kirilov.github.io/" target="_blank">kaloyan-kirilov.github.io</a>&nbsp;</div>
-        <div id="art-theme">Art theme: <a href="https://en.wikipedia.org/wiki/KonoSuba" target="_blank">KonoSuba</a></div>
-    </div>
+        <div id="title">Matching Cards</div>
+        <div id="deck">
+            <div class="card"><div class="tiger-1 image"></div></div>
+            <div class="card"><div class="tiger-2 image"></div></div>
+            <div class="card"><div class="tiger-3 image"></div></div>
+            <div class="card"><div class="tiger-4 image"></div></div>
+            <div class="card"><div class="tiger-5 image"></div></div>
+            <div class="card"><div class="tiger-6 image"></div></div>
+            <div class="card"><div class="tiger-1 image"></div></div>
+            <div class="card"><div class="tiger-2 image"></div></div>
+            <div class="card"><div class="tiger-3 image"></div></div>
+            <div class="card"><div class="tiger-4 image"></div></div>
+            <div class="card"><div class="tiger-5 image"></div></div>
+            <div class="card"><div class="tiger-6 image"></div></div>
+            <audio id="flip-sound" src="sound/card-flip.mp3" preload="auto"></audio>
+            <audio id="match-sound" src="sound/card-match.mp3" preload="auto"></audio>
+            <audio id="win-sound" src="sound/deck-match.mp3" preload="auto"></audio>
+            <audio id="shuffle-sound" src="sound/shuffle-deck.mp3" preload="auto"></audio>
+        </div>
+        <div id="footer-text">Developed by&nbsp;<a href="https://kaloyan-kirilov.github.io/" target="_blank">kaloyan-kirilov.github.io</a></div>
     </div>
     <div class="win-modal">
         <div id="you-win">You Win!</div>

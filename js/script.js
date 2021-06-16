@@ -12,8 +12,8 @@ function resetComparison() {
 }
 
 function shuffleCards() {
-    cards.forEach( e => e.style.background = 'linear-gradient(120deg, #b25b36, #984d2e)' );
-    image.forEach( e => e.style.background = "url('img/card-back.png') no-repeat center / cover #E0A234" );
+    cards.forEach( e => e.style.background = 'linear-gradient(#fff2cd, #ffe4ae)' );
+    image.forEach( e => e.style.background = "url('img/deck/card-back.png') no-repeat center / cover #E0A234" );
     image.forEach( e => e.style.border = '0' );
 
     let deck = document.getElementById('deck');
@@ -35,7 +35,7 @@ function shuffleCards() {
 shuffleCards();
 
 cards.forEach( e => e.addEventListener('click', e => {
-    let charachterCard = e.target.id;
+    let charachterCard = e.target.className;
 
     e.target.classList.add('selected-card');
     e.target.parentElement.style.background = null;
@@ -111,8 +111,8 @@ function compareCards() {
         let noMatch = document.querySelectorAll('.no-match');
 
         function hideDelay() {
-            noMatch.forEach( e => e.parentElement.style.background = 'linear-gradient(120deg, #b25b36, #984d2e)' );
-            noMatch.forEach( e => e.style.background = "url('img/card-back.png') no-repeat center / cover #E0A234" );
+            noMatch.forEach( e => e.parentElement.style.background = 'linear-gradient(#fff2cd, #ffe4ae)' );
+            noMatch.forEach( e => e.style.background = "url('img/deck/card-back.png') no-repeat center / cover #E0A234" );
             noMatch.forEach( e => e.style.border = '0' );
             noMatch.forEach( e => e.classList.remove('no-match') );
         }
