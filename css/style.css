@@ -101,13 +101,10 @@
 }
 
 #footer-text {
-    position: absolute;
-    bottom: 0;
-    display: flex;
     font-family: 'Nunito';
     font-size: 1.35vw;
     color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 1.4vw;
+    margin-top: 1.5vw;
 }
 
 #footer-text a {
@@ -167,12 +164,9 @@
 
 @media screen and (max-width: 1024px) and (orientation: portrait) {
     #title {
-        height: 7.5vh;
         font-size: 3.25vh;
         text-shadow: 0.25vh 0.25vh rgba(0, 0, 0, 0.75);
-        margin-bottom: unset;
-        display: flex;
-        align-items: center;
+        margin-bottom: 1.5vw;
     }
 
     #deck {
@@ -188,12 +182,8 @@
     }
 
     #footer-text {
-        height: 7.5vh;
         font-size: 2.75vw;
-        margin-bottom: unset;
-        position: unset;
-        align-items: center;
-        justify-content: center;
+        margin-top: 1.5vw;
     }
 
     #you-win {
@@ -214,7 +204,6 @@
 
 @media screen and (max-width: 500px) {
     #title {
-        height: 15vw;
         font-size: 6.5vw;
     }    
 
@@ -228,8 +217,8 @@
     }
 
     #footer-text {
-        height: 12vw;
         font-size: 3.8vw;
+        margin: 2vw;
     }
 
     #you-win {
